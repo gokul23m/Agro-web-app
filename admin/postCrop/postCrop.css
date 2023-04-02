@@ -1,0 +1,33 @@
+.heading1 h1{
+    margin: 0px 40%;
+    width: 300px;
+}
+
+.form{
+  
+    align-items: center;
+    margin: 10px auto;
+    width: 500px;
+    border: 3px solid black;
+}
+
+h4{
+    margin: 10px 30%;
+    width: 300px;
+    padding: 10px;
+    
+}
+
+label{
+      padding: 5px;
+     
+}
+input{
+      margin-left: 10px;
+}
+button{
+   width: 100px;
+   margin: 10px 40%;
+     background-color: rgb(26, 119, 26);
+     color: white;
+}

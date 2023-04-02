@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Government Aided Schemes</title>
+    <link rel="icon" href="/images/icon.jpeg">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrapper ">
+       <div class="header bg-primary">
+           <div class="left p-4">
+            
+             <img src="/images/logo.jpeg" alt="logo" class="logo">
+               <h2>Farmer Government Aided Schemes</h2>
+           </div>
+
+           <!-- right -->
+
+           <div class="navbar">
+
+            <div class="menu">
+              <ul class="nav  ">
+                <li class="nav-item"><a class ="nav-link text-body" href="userIndex.html">Home</a></li>
+                <li class="nav-item"><a class ="nav-link text-body" href="/user/cropDetails/cropDetails.html">Crop Details</a></li>
+                <li class="nav-item"><a class ="nav-link text-body" href="/user/userSchemes/userSchemeschemes.html">Schemes</a></li>
+                <li class="nav-item"><a class ="nav-link text-body" href="/user/status/status.html">View Status</a></li>
+                <li class="nav-item"><a class ="nav-link text-body" href="/index.html">Logout</a></li>
+                
+              </ul>
+              </div>
+
+             
+           </div>
+
+       </div>
+
+      
+    <div class="gallery">
+
+        <div class="mySlides ">
+          <img src="/images/images0.jpeg" alt="">
+        </div>
+
+        <div class="mySlides ">
+          <img src="/images/images1.jpeg" alt="">
+        </div>
+
+        <div class="mySlides ">
+          <img src="/images/images2.jpeg" alt="">
+        </div>
+
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+
+
+    </div>
+       
+      
+       </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="./assets/js/bootstrap.min.js"></script>
+   
+      
+      <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        </script>
+
+   
+</body>
+</html>
